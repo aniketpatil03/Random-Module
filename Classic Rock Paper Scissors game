@@ -1,0 +1,42 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+choice = int(input("Enter 0 for ROCK,1 for papers,2 for Scissors "))
+if choice == 0:
+    print(rock)
+elif choice == 1:
+    print(paper)
+elif choice == 2:
+    print(scissors)
+else:
+    print("Wrong choice")
+
+list1 = [rock, paper, scissors]
+computer_choice = random.randint(0,2)
+# Unlike range(a,b) where b is exclusive in randint(a,b) b is inclusive
+
+print(list1[computer_choice])
