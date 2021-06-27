@@ -1,4 +1,6 @@
 import random
+
+#Art from ASCII ART Site
 rock = '''
     _______
 ---'   ____)
